@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iris Classifier</title>
+
+  </head>
+  <body>
+    <center>
+      <h1>Iris Classifier</h1>
+
+      {% if result %}
+        <p>{{ result }}</p><br>
+      {% endif %}
+
+
+      <form method="post" action="/predict">
+        <label> Sepal Length </label><br>
+        <input type="text" name="sl" placeholder="(cm)"><br><br>
+
+        <label> Sepal Width </label><br>
+        <input type="text" name="sw" placeholder="(cm)"><br><br>
+
+        <label> Petal Length </label><br>
+        <input type="text" name="pl" placeholder="(cm)"><br><br>
+
+        <label> Petal Width </label><br>
+        <input type="text" name="pw" placeholder="(cm)"><br><br>
+
+        <input type="submit" value="Prediction"><br><br>
+      </form>
+    </center>
+  </body>
+</html>
